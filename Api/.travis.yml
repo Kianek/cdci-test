@@ -1,0 +1,9 @@
+language: csharp
+solution: cdci-test.sln
+mono: none
+dotnet: 5.0
+install:
+  - dotnet add package xunit -version 2.4.1
+script:
+  - dotnet restore
+  - dotnet test
