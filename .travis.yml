@@ -3,7 +3,7 @@ solution: cdci-test.sln
 mono: none
 dotnet: 5.0
 install:
-  - dotnet add Api.Tests.csproj package xunit
+  - dotnet add Api.Tests/*.csproj package xunit
 script:
   - dotnet restore
   - dotnet test
